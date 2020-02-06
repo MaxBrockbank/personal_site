@@ -1,0 +1,261 @@
+/*----Global----*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  color: #797676;
+}
+
+header{
+    padding: 0 2%;
+    text-align: center;
+}
+
+/*----Hero Text Animation----*/
+.container{
+  margin-top: 160px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+}
+
+.typed-text{
+  font-weight: normal;
+  color:#ccc;
+}
+
+.cursor{
+  display: inline-block;
+  width: 3px;
+  background-color: #ccc;
+  margin-left: .1rem;
+  animation: blink 1s infinite;
+}
+
+.cursor.typing{
+  animation: none;
+}
+@keyframes blink {
+  0%{ background-color: #ccc;}
+  50%{ background-color: transparent;}
+  100%{ background-color: #ccc;}
+}
+
+
+/*----Nav/Header----*/
+
+nav{
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.logo{
+  display: inline-block;
+  float: left;
+}
+
+.nav-links{
+  padding: 40px 0;
+}
+
+nav img{
+  width: 60px;
+  height: auto;
+  vertical-align: middle;
+  float: left;
+}
+
+nav a{
+  display:flex;
+  vertical-align: middle;
+  text-decoration: none;
+  color:#797676;
+}
+
+nav ul{
+  display: inline-block;
+  list-style: none;
+  float: right;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+    color:#797676;
+}
+
+.down-arrow {
+  margin-top: 200px;
+}
+
+.down-arrow img{
+  width: 35px;
+  height: auto;
+}
+
+/*----My Work----*/
+.my-work{
+  width: 90%;
+  padding: 0 5%;
+  margin: 160px auto 160px auto;
+}
+
+.my-work ul{
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: 50px 0;
+}
+
+.my-work ul li{
+  display: inline-block;
+  margin: 0 30px;
+  border: 2px solid #707070;
+}
+
+.work{
+  width: 576px;
+  height: 324px;
+}
+
+.my-work a {
+  padding: 0 3%;
+  float: right;
+  text-decoration: none;
+  color:#797676;
+}
+
+.my-work-heading{
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.main{
+  position: absolute;
+  font-size: 36px;
+  z-index: 2;
+  left: 43.5%;
+}
+
+.fade-1{
+  position: absolute;
+  font-size: 36px;
+  color: #E5E4E4;
+  z-index: 1;
+  left: 40.5%;
+}
+
+.fade-2{
+  position: absolute;
+  font-size: 36px;
+  color: #F2F0F0;
+  z-index: 0;
+  left: 37.5%;
+}
+
+/*----About Me----*/
+
+
+.about-me-heading{
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.about-main{
+  position: absolute;
+  font-size: 36px;
+  z-index: 2;
+  left: 43.5%;
+}
+
+.about-fade-1{
+  position: absolute;
+  font-size: 36px;
+  color: #E5E4E4;
+  z-index: 1;
+  left: 40.5%;
+}
+
+.about-fade-2{
+  position: absolute;
+  font-size: 36px;
+  color: #F2F0F0;
+  z-index: 0;
+  left: 37.5%;
+}
+
+.about-me{
+  width: 90%;
+  padding: 0 5%;
+  margin: 160px auto 0 auto;
+}
+
+.bio{
+  float: left;
+  margin: 0 30px;
+
+}
+.profile-picture{
+  float: right;
+  margin: 0 30px;
+  height: 100%;
+}
+.profile-picture img{
+  width: auto;
+  height: 100%;
+}
+
+
+/*---footer---*/
+footer{
+  width: 100vw;
+  margin-top: 40px;
+}
+
+.contact-me{
+  width: 100vw;
+}
+
+.contact-me h1{
+  vertical-align: middle;
+  position: absolute;
+  z-index: -1;
+  left: 22%;
+  font-size: 120px;
+  opacity: 12%;
+  user-select: none;
+}
+
+.contact-copy a{
+  display: inline-block;
+}
+
+.contact-copy p{
+  display: inline-block;
+}
+
+.contact-copy h2{
+  display: block;
+}
+.contact-copy h2 a  {
+  display: inline-block;
+  z-index: 1;
+  color:#EF4565;
+  text-decoration: none;
+}
