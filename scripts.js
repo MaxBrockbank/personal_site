@@ -42,6 +42,17 @@ function erase(){
 }
 
 }
+
+function smoothScroll(target, duration){
+  var target = document.querySelector(target);
+  var targetPosition = target.getBoundingClientRect().top;
+  console.log(targetPosition);
+}
+
+smoothScroll(".work", 1000)
+
+
+
 window.addEventListener("load", function(){
   setTimeout(type, newTextDelay + 1500);
 })
